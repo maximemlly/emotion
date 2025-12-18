@@ -33,6 +33,6 @@ Notre objectif était de créer un jeu inspiré d'une Famicase choisie aléatoir
 
 ## ⚙️ Outils et langages
 
-| ⚙️ Moteur & Code | 🎨 Graphismes (Pixel Art) |
+| ⚙️ Moteur & Code | 🎨 Graphismes & AI |
 | :---: | :---: |
-| ![Construct 3](https://img.shields.io/badge/Construct%203-green?style=flat-square) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black) ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white) | ![Aseprite](https://img.shields.io/badge/Aseprite-7D929E?style=flat-square&logo=aseprite&logoColor=white) ![Piskel](https://img.shields.io/badge/Piskel-F0C600?style=flat-square) |
+| ![Construct 3](https://img.shields.io/badge/Construct%203-green?style=flat-square) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black) ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white) | ![Aseprite](https://img.shields.io/badge/Aseprite-7D929E?style=flat-square&logo=aseprite&logoColor=white) ![Piskel](https://img.shields.io/badge/Piskel-F0C600?style=flat-square) ![Gemini](https://img.shields.io/badge/Gemini-8E75B2?style=flat-square&logo=googlebard&logoColor=white) |
