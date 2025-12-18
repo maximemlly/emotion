@@ -1,17 +1,11 @@
 {
-	"name": "Platform",
+	"name": "Sky",
 	"plugin-id": "Sprite",
-	"sid": 945811109010384,
+	"sid": 877330889515093,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
-	"behaviorTypes": [
-		{
-			"behaviorId": "solid",
-			"name": "Solid",
-			"sid": 694683712214895
-		}
-	],
+	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
 		"items": [
@@ -26,25 +20,13 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 7687119,
-						"collisionPoly": {
-							"points": [
-								0,
-								0.90234375,
-								1,
-								0.90234375,
-								1,
-								1,
-								0,
-								1
-							]
-						},
+						"imageSpriteId": 6152429,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 331258760611834,
+				"sid": 787276308229354,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

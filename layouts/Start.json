@@ -2,12 +2,12 @@
 	"name": "Start",
 	"layers": [
 		{
-			"name": "Background",
+			"name": "Sky",
 			"overriden": 0,
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "Sprite",
+					"type": "Sky",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -15,22 +15,22 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 6,
-					"sid": 954488213239018,
+					"uid": 8,
+					"sid": 435909573727214,
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"instanceFolderItem": {
-						"sid": 954488213239018,
+						"sid": 435909573727214,
 						"expanded": true
 					},
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 427,
-						"y": 238,
-						"width": 863,
-						"height": 477,
+						"x": 4714.5,
+						"y": 633.5,
+						"width": 11451,
+						"height": 2833,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -74,6 +74,78 @@
 			"global": false
 		},
 		{
+			"name": "Mount",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [
+				{
+					"type": "Mount",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 10,
+					"sid": 428102330665283,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 428102330665283,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 995,
+						"y": 530,
+						"width": 8947.034117687183,
+						"height": 1118.3792647108978,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 134832041322215,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"isHTMLElementsLayer": false,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				0.3686274509803922,
+				0.3686274509803922,
+				0.3686274509803922,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
 			"name": "Main Scene",
 			"overriden": 0,
 			"subLayers": [],
@@ -82,7 +154,7 @@
 					"type": "Player",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "base",
+						"initial-animation": "playerIdle",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -92,7 +164,7 @@
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
-						"Walk": {
+						"PlayerMovements": {
 							"properties": {
 								"max-speed": 330,
 								"acceleration": 1500,
@@ -119,10 +191,55 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 251,
-						"y": 396,
+						"x": 216,
+						"y": 800,
 						"width": 250.07360545504892,
 						"height": 250.07360545504892,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Wall",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 9,
+					"sid": 873988680754602,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"use-instance-tags": true,
+								"tags": ""
+							}
+						}
+					},
+					"instanceFolderItem": {
+						"sid": 873988680754602,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": -47.5,
+						"y": 550.5,
+						"width": 81,
+						"height": 1089,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -145,7 +262,7 @@
 						"live-preview": false
 					},
 					"uid": 4,
-					"sid": 125928259600241,
+					"sid": 577893510364541,
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
@@ -158,23 +275,23 @@
 						}
 					},
 					"instanceFolderItem": {
-						"sid": 125928259600241,
+						"sid": 577893510364541,
 						"expanded": true
 					},
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 961,
-						"y": 469,
-						"width": 1924,
-						"height": 21,
+						"x": 3187,
+						"y": 547,
+						"width": 8640.590891950542,
+						"height": 1080.0738614938177,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
 							1,
 							1,
 							1,
-							0
+							1
 						],
 						"angle": 0,
 						"zElevation": 0
@@ -218,11 +335,11 @@
 	"sid": 207021111527163,
 	"nonworld-instances": [],
 	"effectTypes": [],
-	"width": 1920,
+	"width": 20000,
 	"height": 1080,
-	"unboundedScrolling": false,
+	"unboundedScrolling": true,
 	"vpX": 0.5,
 	"vpY": 0.5,
 	"projection": "perspective",
-	"eventSheet": null
+	"eventSheet": "PlayerMovements"
 }

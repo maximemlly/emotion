@@ -1,7 +1,7 @@
 {
-	"name": "Sprite",
+	"name": "Mount",
 	"plugin-id": "Sprite",
-	"sid": 196946097797854,
+	"sid": 963631303177401,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -12,21 +12,31 @@
 			{
 				"frames": [
 					{
-						"width": 250,
-						"height": 250,
+						"width": 2048,
+						"height": 256,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 6348946,
+						"imageSpriteId": 2430442,
+						"collisionPoly": {
+							"points": [
+								0.5947265625,
+								0.3359375,
+								0.84521484375,
+								1,
+								0.35986328125,
+								0.984375
+							]
+						},
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 704210877333002,
+				"sid": 459589585479165,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

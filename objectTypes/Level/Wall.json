@@ -1,7 +1,7 @@
 {
-	"name": "Platform",
+	"name": "Wall",
 	"plugin-id": "Sprite",
-	"sid": 945811109010384,
+	"sid": 351488627150504,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -9,7 +9,7 @@
 		{
 			"behaviorId": "solid",
 			"name": "Solid",
-			"sid": 694683712214895
+			"sid": 494094216429528
 		}
 	],
 	"effectTypes": [],
@@ -18,33 +18,21 @@
 			{
 				"frames": [
 					{
-						"width": 2048,
-						"height": 256,
+						"width": 250,
+						"height": 250,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 7687119,
-						"collisionPoly": {
-							"points": [
-								0,
-								0.90234375,
-								1,
-								0.90234375,
-								1,
-								1,
-								0,
-								1
-							]
-						},
+						"imageSpriteId": 2014153,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 331258760611834,
+				"sid": 418521643758455,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,
