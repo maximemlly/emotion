@@ -4,7 +4,15 @@
 	"sid": 767136387143090,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
-	"instanceVariables": [],
+	"instanceVariables": [
+		{
+			"name": "ViePersoPrincipal",
+			"type": "number",
+			"desc": "Quantité restante de vie du personnage principal",
+			"show": true,
+			"sid": 590210725756517
+		}
+	],
 	"behaviorTypes": [
 		{
 			"behaviorId": "Platform",

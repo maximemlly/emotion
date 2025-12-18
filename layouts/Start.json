@@ -162,7 +162,9 @@
 					"uid": 2,
 					"sid": 240820691909675,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"ViePersoPrincipal": 50
+					},
 					"behaviors": {
 						"PlayerMovements": {
 							"properties": {

@@ -1,0 +1,84 @@
+{
+	"name": "Boss",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 601945541012699
+				}
+			],
+			"actions": [
+				{
+					"id": "set-width",
+					"objectClass": "Sprite",
+					"sid": 531589845301686,
+					"parameters": {
+						"width": "BG.Width*Boss.Vie/Boss.MaxVie"
+					}
+				}
+			],
+			"sid": 650694330586806
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 505186262169738,
+					"parameters": {
+						"key": 32
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "subtract-from-instvar",
+					"objectClass": "Boss",
+					"sid": 590878974310878,
+					"parameters": {
+						"instance-variable": "Vie",
+						"value": "20"
+					}
+				}
+			],
+			"sid": 994100920512433
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Boss",
+					"sid": 191756710857594,
+					"parameters": {
+						"instance-variable": "Vie",
+						"comparison": 2,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Boss",
+					"sid": 260482021365693,
+					"parameters": {
+						"instance-variable": "Vie",
+						"value": "0"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "Boss",
+					"sid": 769867171186876
+				}
+			],
+			"sid": 246110858800973
+		}
+	],
+	"sid": 315536988555170
+}

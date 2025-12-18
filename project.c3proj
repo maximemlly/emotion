@@ -9,21 +9,21 @@
 		{
 			"type": "plugin",
 			"id": "Camera3D",
-			"name": "3D camera",
+			"name": "Caméra 3D",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "plugin",
 			"id": "Keyboard",
-			"name": "Keyboard",
+			"name": "Clavier",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "plugin",
 			"id": "Mouse",
-			"name": "Mouse",
+			"name": "Souris",
 			"author": "Scirra",
 			"bundled": false
 		},
@@ -36,36 +36,61 @@
 		},
 		{
 			"type": "plugin",
+			"id": "TiledBg",
+			"name": "Arrière-plan Répété",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "gamepad",
-			"name": "Gamepad",
+			"name": "Manette",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "progressbar",
+			"name": "Barre de progression",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Anchor",
+			"name": "Ancre",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
 			"id": "Platform",
-			"name": "Platform",
+			"name": "Plate-forme",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
 			"id": "scrollto",
-			"name": "Scroll To",
+			"name": "Défiler vers",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
 			"id": "solid",
-			"name": "Solid",
+			"name": "Solide",
 			"author": "Scirra",
 			"bundled": false
 		}
 	],
 	"uniqueId": "auc5ylrf608",
 	"objectTypes": {
-		"items": [],
+		"items": [
+			"BarreDeProgression",
+			"BG",
+			"Sprite"
+		],
 		"subfolders": [
 			{
 				"items": [
@@ -83,7 +108,8 @@
 					"Player",
 					"Gamepad",
 					"3DCamera",
-					"Mouse"
+					"Mouse",
+					"Boss"
 				],
 				"subfolders": [],
 				"name": "Player"
@@ -105,7 +131,9 @@
 		"subfolders": []
 	},
 	"eventSheets": {
-		"items": [],
+		"items": [
+			"Boss"
+		],
 		"subfolders": [
 			{
 				"items": [
@@ -224,6 +252,110 @@
 							"name": "sprite walk.png",
 							"type": "image/png",
 							"sid": 247581201491202,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "background.png",
+							"type": "image/png",
+							"sid": 967197408842135,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "attaque.gif",
+							"type": "image/gif",
+							"sid": 840979198679085,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "first_idle1.png",
+							"type": "image/png",
+							"sid": 876462353396136,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "floor.png",
+							"type": "image/png",
+							"sid": 178655094271654,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "image.png",
+							"type": "image/png",
+							"sid": 965838522487421,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "Idle.gif",
+							"type": "image/gif",
+							"sid": 244006633822224,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "houses.png",
+							"type": "image/png",
+							"sid": 239904088614626,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "jump.gif",
+							"type": "image/gif",
+							"sid": 961892955755211,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "run.gif",
+							"type": "image/gif",
+							"sid": 840636949569878,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "mount.png",
+							"type": "image/png",
+							"sid": 925482555373254,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "sprite idle.png",
+							"type": "image/png",
+							"sid": 861877478023374,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "walk.gif",
+							"type": "image/gif",
+							"sid": 466725608711633,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "sky.png",
+							"type": "image/png",
+							"sid": 691722672366549,
 							"file-info": {
 								"purpose": "none"
 							}
