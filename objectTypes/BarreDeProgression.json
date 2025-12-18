@@ -1,0 +1,15 @@
+{
+	"name": "BarreDeProgression",
+	"plugin-id": "progressbar",
+	"sid": 213103817149827,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Anchor",
+			"name": "Ancre",
+			"sid": 326843977610681
+		}
+	]
+}
