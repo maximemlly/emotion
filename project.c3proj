@@ -55,6 +55,12 @@
 				"name": "Player"
 			}
 		]
+		"items": [
+			"Player",
+			"Player2"
+			"Keyboard"
+		],
+		"subfolders": []
 	},
 	"functionsName": "Functions",
 	"autosaveData": null,
