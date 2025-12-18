@@ -17,7 +17,8 @@
 	"uniqueId": "auc5ylrf608",
 	"objectTypes": {
 		"items": [
-			"Player"
+			"Player",
+			"Player2"
 		],
 		"subfolders": []
 	},
