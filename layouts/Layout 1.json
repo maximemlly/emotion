@@ -42,10 +42,55 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 742.5,
-						"y": 376,
-						"width": 113,
-						"height": 106,
+						"x": 352.1339041199978,
+						"y": 50.612334838227994,
+						"width": 65.26780823999555,
+						"height": 61.224669676455996,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Platform",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 4,
+					"sid": 125928259600241,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"use-instance-tags": true,
+								"tags": ""
+							}
+						}
+					},
+					"instanceFolderItem": {
+						"sid": 125928259600241,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 337,
+						"y": 292,
+						"width": 586,
+						"height": 118,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
