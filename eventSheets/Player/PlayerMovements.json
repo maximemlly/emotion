@@ -2,10 +2,6 @@
 	"name": "PlayerMovements",
 	"events": [
 		{
-			"eventType": "include",
-			"includeSheet": "Boss_event"
-		},
-		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -38,6 +34,20 @@
 						"duration": "0.2",
 						"mode": "reducing-magnitude"
 					}
+				},
+				{
+					"id": "play",
+					"objectClass": "playerAudio",
+					"sid": 509181916295007,
+					"parameters": {
+						"audio-file": {
+							"path": "sword_hit"
+						},
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
 				}
 			],
 			"sid": 166154276868924
@@ -61,6 +71,20 @@
 						"animation": "\"playerWalk\"",
 						"from": "current-frame"
 					}
+				},
+				{
+					"id": "play",
+					"objectClass": "playerAudio",
+					"sid": 701930355847066,
+					"parameters": {
+						"audio-file": {
+							"path": "player_walk"
+						},
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
 				}
 			],
 			"sid": 788869456219661
@@ -83,6 +107,11 @@
 			],
 			"actions": [
 				{
+					"id": "stop-animation",
+					"objectClass": "Player",
+					"sid": 853061869896132
+				},
+				{
 					"id": "set-animation",
 					"objectClass": "Player",
 					"sid": 447234836938865,
@@ -99,6 +128,11 @@
 					"parameters": {
 						"max-speed": "330"
 					}
+				},
+				{
+					"id": "stop-all",
+					"objectClass": "playerAudio",
+					"sid": 978388676167552
 				}
 			],
 			"sid": 353499084875825
@@ -236,6 +270,28 @@
 					"parameters": {
 						"animation": "\"playerRun\"",
 						"from": "beginning"
+					}
+				},
+				{
+					"id": "stop",
+					"objectClass": "playerAudio",
+					"sid": 838784566949255,
+					"parameters": {
+						"tag": "\"\""
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "playerAudio",
+					"sid": 812935012774006,
+					"parameters": {
+						"audio-file": {
+							"path": "player_running"
+						},
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
 					}
 				}
 			],

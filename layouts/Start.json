@@ -99,10 +99,10 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 995,
-						"y": 530,
-						"width": 8947.034117687183,
-						"height": 1118.3792647108978,
+						"x": 1069,
+						"y": 726,
+						"width": 5626.630416300694,
+						"height": 703.3288020375868,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -179,8 +179,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 3187,
-						"y": 547,
+						"x": 4310,
+						"y": 550,
 						"width": 8640.590891950542,
 						"height": 1080.0738614938177,
 						"originX": 0.5,
@@ -207,9 +207,7 @@
 					"uid": 2,
 					"sid": 240820691909675,
 					"tags": "",
-					"instanceVariables": {
-						"ViePersoPrincipal": 50
-					},
+					"instanceVariables": {},
 					"behaviors": {
 						"PlayerMovements": {
 							"properties": {
@@ -381,5 +379,5 @@
 	"vpX": 0.5,
 	"vpY": 0.5,
 	"projection": "perspective",
-	"eventSheet": "PlayerMovements"
+	"eventSheet": "StartLevel"
 }
