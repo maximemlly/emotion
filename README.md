@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://media.discordapp.net/attachments/1450889577421209631/1451203846155141120/New_Piskel1.png?ex=69455266&is=694400e6&hm=fab2d11a383bbeaf349194e562eec80b6cb8f67e94a57303dea03b20725b33ef&=&format=webp&quality=lossless&width=3744&height=468" alt="Bannière du Jeu" width="100%">
+  <img src="files/Assets/logo_emotion.png" alt="Bannière du Jeu" width="75%">
 </div>
 <br>
 
