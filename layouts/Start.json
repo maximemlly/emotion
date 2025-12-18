@@ -151,6 +151,51 @@
 			"subLayers": [],
 			"instances": [
 				{
+					"type": "Platform",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 4,
+					"sid": 577893510364541,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"use-instance-tags": true,
+								"tags": ""
+							}
+						}
+					},
+					"instanceFolderItem": {
+						"sid": 577893510364541,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 3187,
+						"y": 547,
+						"width": 8640.590891950542,
+						"height": 1080.0738614938177,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
 					"type": "Player",
 					"properties": {
 						"initially-visible": true,
@@ -179,11 +224,6 @@
 								"default-controls": true,
 								"enabled": true
 							}
-						},
-						"Camera": {
-							"properties": {
-								"enabled": true
-							}
 						}
 					},
 					"instanceFolderItem": {
@@ -193,8 +233,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 216,
-						"y": 800,
+						"x": 206,
+						"y": 917,
 						"width": 250.07360545504892,
 						"height": 250.07360545504892,
 						"originX": 0.5,
@@ -248,14 +288,14 @@
 							1,
 							1,
 							1,
-							1
+							0
 						],
 						"angle": 0,
 						"zElevation": 0
 					}
 				},
 				{
-					"type": "Platform",
+					"type": "PlayerCamera",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -263,37 +303,35 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 4,
-					"sid": 577893510364541,
+					"uid": 5,
+					"sid": 185488637891133,
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
-						"Solid": {
+						"ScrollTo": {
 							"properties": {
-								"enabled": true,
-								"use-instance-tags": true,
-								"tags": ""
+								"enabled": true
 							}
 						}
 					},
 					"instanceFolderItem": {
-						"sid": 577893510364541,
+						"sid": 185488637891133,
 						"expanded": true
 					},
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 3187,
-						"y": 547,
-						"width": 8640.590891950542,
-						"height": 1080.0738614938177,
+						"x": 198,
+						"y": 527,
+						"width": 136.39209016613466,
+						"height": 129.09839550484404,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
 							1,
 							1,
 							1,
-							1
+							0
 						],
 						"angle": 0,
 						"zElevation": 0

@@ -18,11 +18,6 @@
 			"behaviorId": "Platform",
 			"name": "PlayerMovements",
 			"sid": 798068219655687
-		},
-		{
-			"behaviorId": "scrollto",
-			"name": "Camera",
-			"sid": 514504661029632
 		}
 	],
 	"effectTypes": [],
@@ -1156,7 +1151,7 @@
 						],
 						"sid": 149098077445038,
 						"name": "playerWalk",
-						"isLooping": false,
+						"isLooping": true,
 						"isPingPong": false,
 						"repeatCount": 1,
 						"repeatTo": 0,

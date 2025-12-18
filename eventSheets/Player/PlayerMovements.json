@@ -27,6 +27,17 @@
 						"animation": "\"playerAttack\"",
 						"from": "beginning"
 					}
+				},
+				{
+					"id": "shake",
+					"objectClass": "PlayerCamera",
+					"sid": 739397487467986,
+					"behaviorType": "ScrollTo",
+					"parameters": {
+						"magnitude": "5",
+						"duration": "0.2",
+						"mode": "reducing-magnitude"
+					}
 				}
 			],
 			"sid": 166154276868924
@@ -45,9 +56,9 @@
 				{
 					"id": "set-animation",
 					"objectClass": "Player",
-					"sid": 711839353127991,
+					"sid": 569034836547809,
 					"parameters": {
-						"animation": "\"playerRun\"",
+						"animation": "\"playerWalk\"",
 						"from": "current-frame"
 					}
 				}
@@ -78,6 +89,15 @@
 					"parameters": {
 						"animation": "\"playerIdle\"",
 						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-max-speed",
+					"objectClass": "Player",
+					"sid": 313732460733042,
+					"behaviorType": "PlayerMovements",
+					"parameters": {
+						"max-speed": "330"
 					}
 				}
 			],
@@ -171,6 +191,108 @@
 				}
 			],
 			"sid": 634775654816183
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-moved",
+					"objectClass": "Player",
+					"sid": 576965326342517,
+					"behaviorType": "PlayerMovements"
+				},
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 308340888727149,
+					"parameters": {
+						"key": 16
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-acceleration",
+					"objectClass": "Player",
+					"sid": 979983232612213,
+					"behaviorType": "PlayerMovements",
+					"parameters": {
+						"acceleration": "1000"
+					}
+				},
+				{
+					"id": "set-max-speed",
+					"objectClass": "Player",
+					"sid": 696835962024846,
+					"behaviorType": "PlayerMovements",
+					"parameters": {
+						"max-speed": "550"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Player",
+					"sid": 705673579570888,
+					"parameters": {
+						"animation": "\"playerRun\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 927910334040187
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 151033513980932
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "PlayerCamera",
+					"sid": 921658352052930,
+					"parameters": {
+						"x": "lerp(Self.X,Player.X,3*dt)",
+						"y": "PlayerCamera.Y"
+					}
+				}
+			],
+			"sid": 213620634144855
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 180419252097375
+				},
+				{
+					"id": "compare-x",
+					"objectClass": "PlayerCamera",
+					"sid": 908456998476372,
+					"parameters": {
+						"comparison": 2,
+						"x-co-ordinate": "950"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "PlayerCamera",
+					"sid": 808196146622359,
+					"parameters": {
+						"x": "950",
+						"y": "PlayerCamera.Y"
+					}
+				}
+			],
+			"sid": 160936744800397
 		}
 	],
 	"sid": 711005575548260

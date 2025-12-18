@@ -1,15 +1,15 @@
 {
-	"name": "Wall",
+	"name": "PlayerCamera",
 	"plugin-id": "Sprite",
-	"sid": 351488627150504,
+	"sid": 846629612176263,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
-			"behaviorId": "solid",
-			"name": "Solid",
-			"sid": 494094216429528
+			"behaviorId": "scrollto",
+			"name": "ScrollTo",
+			"sid": 612725183539818
 		}
 	],
 	"effectTypes": [],
@@ -26,13 +26,13 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 3136078,
+						"imageSpriteId": 5704494,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 418521643758455,
+				"sid": 248278159486619,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,
