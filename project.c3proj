@@ -26,17 +26,39 @@
 			"name": "Platform",
 			"author": "Scirra",
 			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "solid",
+			"name": "Solid",
+			"author": "Scirra",
+			"bundled": false
 		}
 	],
 	"uniqueId": "auc5ylrf608",
 	"objectTypes": {
+		"items": [],
+		"subfolders": [
+			{
+				"items": [
+					"Platform"
+				],
+				"subfolders": [],
+				"name": "Level"
+			},
+			{
+				"items": [
+					"Keyboard",
+					"Player"
+				],
+				"subfolders": [],
+				"name": "Player"
+			}
+		]
 		"items": [
 			"Player",
-<<<<<<< HEAD
 			"Player2"
-=======
 			"Keyboard"
->>>>>>> 9964d118baaf3b76bb1e9ac3c321c920a2a0ef09
 		],
 		"subfolders": []
 	},
@@ -55,7 +77,15 @@
 	},
 	"eventSheets": {
 		"items": [],
-		"subfolders": []
+		"subfolders": [
+			{
+				"items": [
+					"PlayerMovements"
+				],
+				"subfolders": [],
+				"name": "Player"
+			}
+		]
 	},
 	"rootFileFolders": {
 		"script": {
