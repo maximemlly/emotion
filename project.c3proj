@@ -132,7 +132,7 @@
 	},
 	"eventSheets": {
 		"items": [
-			"Boss"
+			"Boss_event"
 		],
 		"subfolders": [
 			{

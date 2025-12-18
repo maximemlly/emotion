@@ -1,5 +1,5 @@
 {
-	"name": "Boss",
+	"name": "Boss_event",
 	"events": [
 		{
 			"eventType": "block",
@@ -26,11 +26,12 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-key-pressed",
-					"objectClass": "Keyboard",
-					"sid": 505186262169738,
+					"id": "on-click",
+					"objectClass": "Mouse",
+					"sid": 301135921250594,
 					"parameters": {
-						"key": 32
+						"mouse-button": "left",
+						"click-type": "clicked"
 					}
 				}
 			],
@@ -53,10 +54,10 @@
 				{
 					"id": "compare-instance-variable",
 					"objectClass": "Boss",
-					"sid": 191756710857594,
+					"sid": 408392336102863,
 					"parameters": {
 						"instance-variable": "Vie",
-						"comparison": 2,
+						"comparison": 3,
 						"value": "0"
 					}
 				}
