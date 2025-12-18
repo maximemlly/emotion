@@ -8,6 +8,13 @@
 	"usedAddons": [
 		{
 			"type": "plugin",
+			"id": "Camera3D",
+			"name": "3D camera",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Keyboard",
 			"name": "Keyboard",
 			"author": "Scirra",
@@ -21,9 +28,23 @@
 			"bundled": false
 		},
 		{
+			"type": "plugin",
+			"id": "gamepad",
+			"name": "Gamepad",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
 			"type": "behavior",
 			"id": "Platform",
 			"name": "Platform",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "scrollto",
+			"name": "Scroll To",
 			"author": "Scirra",
 			"bundled": false
 		},
@@ -41,7 +62,8 @@
 		"subfolders": [
 			{
 				"items": [
-					"Platform"
+					"Platform",
+					"Sprite"
 				],
 				"subfolders": [],
 				"name": "Level"
@@ -49,7 +71,9 @@
 			{
 				"items": [
 					"Keyboard",
-					"Player"
+					"Player",
+					"Gamepad",
+					"3DCamera"
 				],
 				"subfolders": [],
 				"name": "Player"
@@ -65,7 +89,8 @@
 	},
 	"layouts": {
 		"items": [
-			"Layout 1"
+			"Start",
+			"End"
 		],
 		"subfolders": []
 	},
@@ -182,7 +207,22 @@
 		},
 		"general": {
 			"items": [],
-			"subfolders": []
+			"subfolders": [
+				{
+					"items": [
+						{
+							"name": "sprite walk.png",
+							"type": "image/png",
+							"sid": 247581201491202,
+							"file-info": {
+								"purpose": "none"
+							}
+						}
+					],
+					"subfolders": [],
+					"name": "Assets"
+				}
+			]
 		}
 	},
 	"timelines": {

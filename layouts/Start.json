@@ -1,8 +1,80 @@
 {
-	"name": "Layout 1",
+	"name": "Start",
 	"layers": [
 		{
-			"name": "Layer 0",
+			"name": "Background",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [
+				{
+					"type": "Sprite",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 6,
+					"sid": 954488213239018,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 954488213239018,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 427,
+						"y": 238,
+						"width": 863,
+						"height": 477,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 602377908079341,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"isHTMLElementsLayer": false,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				0.3686274509803922,
+				0.3686274509803922,
+				0.3686274509803922,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
+			"name": "Main Scene",
 			"overriden": 0,
 			"subLayers": [],
 			"instances": [
@@ -10,7 +82,7 @@
 					"type": "Player",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
+						"initial-animation": "base",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -20,7 +92,7 @@
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
-						"Platform": {
+						"Walk": {
 							"properties": {
 								"max-speed": 330,
 								"acceleration": 1500,
@@ -33,6 +105,11 @@
 								"default-controls": true,
 								"enabled": true
 							}
+						},
+						"Camera": {
+							"properties": {
+								"enabled": true
+							}
 						}
 					},
 					"instanceFolderItem": {
@@ -42,10 +119,10 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 352.1339041199978,
-						"y": 50.612334838227994,
-						"width": 65.26780823999555,
-						"height": 61.224669676455996,
+						"x": 251,
+						"y": 396,
+						"width": 250.07360545504892,
+						"height": 250.07360545504892,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -87,17 +164,17 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 337,
-						"y": 292,
-						"width": 586,
-						"height": 118,
+						"x": 961,
+						"y": 469,
+						"width": 1924,
+						"height": 21,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
 							1,
 							1,
 							1,
-							1
+							0
 						],
 						"angle": 0,
 						"zElevation": 0
@@ -121,7 +198,7 @@
 				0.3686274509803922,
 				1
 			],
-			"isTransparent": false,
+			"isTransparent": true,
 			"parallaxX": 1,
 			"parallaxY": 1,
 			"scaleRate": 1,
@@ -141,8 +218,8 @@
 	"sid": 207021111527163,
 	"nonworld-instances": [],
 	"effectTypes": [],
-	"width": 1708,
-	"height": 960,
+	"width": 1920,
+	"height": 1080,
 	"unboundedScrolling": false,
 	"vpX": 0.5,
 	"vpY": 0.5,

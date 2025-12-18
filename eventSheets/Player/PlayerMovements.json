@@ -18,7 +18,7 @@
 					"id": "simulate-control",
 					"objectClass": "Player",
 					"sid": 917903852703755,
-					"behaviorType": "Platform",
+					"behaviorType": "Walk",
 					"parameters": {
 						"control": "jump"
 					}
@@ -43,7 +43,7 @@
 					"id": "simulate-control",
 					"objectClass": "Player",
 					"sid": 720008985608975,
-					"behaviorType": "Platform",
+					"behaviorType": "Walk",
 					"parameters": {
 						"control": "left"
 					}
@@ -68,13 +68,83 @@
 					"id": "simulate-control",
 					"objectClass": "Player",
 					"sid": 638641535796474,
-					"behaviorType": "Platform",
+					"behaviorType": "Walk",
 					"parameters": {
 						"control": "right"
 					}
 				}
 			],
 			"sid": 245354046083347
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-moving",
+					"objectClass": "Player",
+					"sid": 808502122469247,
+					"behaviorType": "Walk",
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Player",
+					"sid": 565282195625739,
+					"parameters": {
+						"animation": "\"idle\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 446957606396456
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-moving",
+					"objectClass": "Player",
+					"sid": 269436654398809,
+					"behaviorType": "Walk"
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Player",
+					"sid": 130432613096106,
+					"parameters": {
+						"animation": "\"walk\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 823687059920295
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-jumping",
+					"objectClass": "Player",
+					"sid": 732605356804214,
+					"behaviorType": "Walk"
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Player",
+					"sid": 147536469029997,
+					"parameters": {
+						"animation": "\"jump\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 706225804176269
 		}
 	],
 	"sid": 711005575548260
