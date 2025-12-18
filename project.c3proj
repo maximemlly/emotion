@@ -8,7 +8,6 @@
 	"usedAddons": [
 		{
 			"type": "plugin",
-<<<<<<< HEAD
 			"id": "Camera3D",
 			"name": "Caméra 3D",
 			"author": "Scirra",
@@ -16,8 +15,6 @@
 		},
 		{
 			"type": "plugin",
-=======
->>>>>>> 935544625f46926e17dc3735ae78dabc8f2f31a4
 			"id": "Keyboard",
 			"name": "Clavier",
 			"author": "Scirra",
@@ -110,14 +107,11 @@
 					"Keyboard",
 					"Player",
 					"Gamepad",
-<<<<<<< HEAD
 					"3DCamera",
 					"Mouse",
 					"Boss"
-=======
 					"Mouse",
 					"PlayerCamera"
->>>>>>> 935544625f46926e17dc3735ae78dabc8f2f31a4
 				],
 				"subfolders": [],
 				"name": "Player"
