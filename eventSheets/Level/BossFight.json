@@ -8,6 +8,64 @@
 		{
 			"eventType": "include",
 			"includeSheet": "EnemyBehavior"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 197749348741307
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Demo",
+					"sid": 578815572434488,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "boss",
+					"sid": 312326298430326,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 190748041742803
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-destroyed",
+					"objectClass": "Enemy",
+					"sid": 316655853579549
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Demo",
+					"sid": 523457077313374,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "boss",
+					"sid": 466336850013953,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 871424747493121
 		}
 	],
 	"sid": 702194940974485

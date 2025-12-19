@@ -173,7 +173,9 @@
 						"items": [
 							"Platfrom",
 							"EnemyDirectionBox",
-							"BossFight"
+							"BossFight",
+							"Demo",
+							"boss"
 						],
 						"subfolders": [],
 						"name": "BossFight"
@@ -496,5 +498,5 @@
 	},
 	"viewportWidth": 1920,
 	"viewportHeight": 1080,
-	"firstLayout": null
+	"firstLayout": "MainMenu"
 }

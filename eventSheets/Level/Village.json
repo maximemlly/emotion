@@ -160,6 +160,14 @@
 			],
 			"actions": [
 				{
+					"id": "set-visible",
+					"objectClass": "tear",
+					"sid": 445182181001927,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
 					"id": "set-boolean-eventvar",
 					"objectClass": "System",
 					"sid": 689337791677542,

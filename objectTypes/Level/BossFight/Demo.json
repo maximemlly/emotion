@@ -1,0 +1,10 @@
+{
+	"name": "Demo",
+	"plugin-id": "Text",
+	"sid": 678041610677338,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": []
+}
