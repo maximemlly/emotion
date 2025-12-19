@@ -4,7 +4,8 @@
 <br>
 
 # ❤️‍🩹 EMOTION
-### Récompensé du _🏆 Prix d'Equipe_ à la Coda Jam 2025
+![Coda Jam 2025](https://img.shields.io/badge/Coda%20Jam%202025-Prix%20d'%C3%A9quipe-F55D52?style=for-the-badge&logo=coda&logoColor=white)
+
 ### EMOTION est un jeu créé par Maxime M, Louis B, Sofiane C, Tom A et Alexis D à l'occasion de la Game Jam CODA de décembre 2025.
 
 ## 📚 Synopsis
