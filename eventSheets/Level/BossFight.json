@@ -3,11 +3,7 @@
 	"events": [
 		{
 			"eventType": "include",
-			"includeSheet": "PlayerMovements"
-		},
-		{
-			"eventType": "include",
-			"includeSheet": "PlayerCamera"
+			"includeSheet": "PlayerBehavior"
 		},
 		{
 			"eventType": "include",

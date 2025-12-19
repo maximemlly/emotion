@@ -2,6 +2,16 @@
 	"name": "PlayerMovements",
 	"events": [
 		{
+			"eventType": "variable",
+			"name": "IsDemon",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 340307623583159
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -9,6 +19,15 @@
 					"objectClass": "Player",
 					"sid": 926269057407761,
 					"behaviorType": "PlayerMovements"
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 702808333420682,
+					"parameters": {
+						"variable": "IsDemon"
+					},
+					"isInverted": true
 				}
 			],
 			"actions": [
@@ -52,6 +71,15 @@
 					"objectClass": "Player",
 					"sid": 134527519550164,
 					"behaviorType": "PlayerMovements"
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 207834804587222,
+					"parameters": {
+						"variable": "IsDemon"
+					},
+					"isInverted": true
 				}
 			],
 			"actions": [
@@ -142,6 +170,15 @@
 					"objectClass": "Player",
 					"sid": 780077065794650,
 					"behaviorType": "PlayerMovements"
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 714949991379238,
+					"parameters": {
+						"variable": "IsDemon"
+					},
+					"isInverted": true
 				}
 			],
 			"actions": [
@@ -215,6 +252,15 @@
 								"mouse-button": "left",
 								"click-type": "clicked"
 							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 777514053788360,
+							"parameters": {
+								"variable": "IsDemon"
+							},
+							"isInverted": true
 						}
 					],
 					"actions": [
@@ -251,6 +297,10 @@
 								"stereo-pan": "0",
 								"tag-optional": "\"\""
 							}
+						},
+						{
+							"callFunction": "CheckMob",
+							"sid": 414534406681489
 						}
 					],
 					"sid": 447763826887260
@@ -273,6 +323,15 @@
 							"objectClass": "Player",
 							"sid": 724401123376857,
 							"behaviorType": "PlayerMovements"
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 156088881051194,
+							"parameters": {
+								"variable": "IsDemon"
+							},
+							"isInverted": true
 						},
 						{
 							"id": "key-is-down",
@@ -338,6 +397,386 @@
 				}
 			],
 			"sid": 223544063109321
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Demon",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-moved",
+							"objectClass": "Player",
+							"sid": 808573193018245,
+							"behaviorType": "PlayerMovements"
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 723343953660968,
+							"parameters": {
+								"variable": "IsDemon"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Player",
+							"sid": 439021460912256,
+							"parameters": {
+								"animation": "\"demon_walk\"",
+								"from": "current-frame"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "playerAudio",
+							"sid": 456085086053006,
+							"parameters": {
+								"audio-file": {
+									"path": "player_walk"
+								},
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 450822309487794
+				},
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [],
+					"sid": 630671292476826
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-stopped",
+							"objectClass": "Player",
+							"sid": 801554678470867,
+							"behaviorType": "PlayerMovements"
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 743405904538784,
+							"parameters": {
+								"variable": "IsDemon"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "stop-animation",
+							"objectClass": "Player",
+							"sid": 397878680864991
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Player",
+							"sid": 668592198142000,
+							"parameters": {
+								"animation": "\"demon_idle\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-max-speed",
+							"objectClass": "Player",
+							"sid": 552516561646741,
+							"behaviorType": "PlayerMovements",
+							"parameters": {
+								"max-speed": "330"
+							}
+						},
+						{
+							"id": "stop-all",
+							"objectClass": "playerAudio",
+							"sid": 736903930528165
+						}
+					],
+					"sid": 167822750562260
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-jump",
+							"objectClass": "Player",
+							"sid": 634195513149252,
+							"behaviorType": "PlayerMovements"
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 684803493913168,
+							"parameters": {
+								"variable": "IsDemon"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Player",
+							"sid": 293585137271966,
+							"parameters": {
+								"animation": "\"demon_jump\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 647049778291549,
+							"parameters": {
+								"seconds": "1.0",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Player",
+							"sid": 868327149634846,
+							"parameters": {
+								"animation": "\"demon_idle\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 300364901371312
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Attack2",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-click",
+									"objectClass": "Mouse",
+									"sid": 188435120714590,
+									"parameters": {
+										"mouse-button": "left",
+										"click-type": "clicked"
+									}
+								},
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 846602776650524,
+									"parameters": {
+										"variable": "IsDemon"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "Player",
+									"sid": 855010874326988,
+									"parameters": {
+										"animation": "\"demon_attack\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "shake",
+									"objectClass": "PlayerCamera",
+									"sid": 327843944049421,
+									"behaviorType": "ScrollTo",
+									"parameters": {
+										"magnitude": "5",
+										"duration": "0.2",
+										"mode": "reducing-magnitude"
+									}
+								},
+								{
+									"id": "play",
+									"objectClass": "playerAudio",
+									"sid": 540365195784016,
+									"parameters": {
+										"audio-file": {
+											"path": "sword_hit"
+										},
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								},
+								{
+									"callFunction": "CheckMob",
+									"sid": 425131238319899
+								}
+							],
+							"sid": 960980443837683
+						}
+					],
+					"sid": 840023713656332
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Run2",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-moved",
+									"objectClass": "Player",
+									"sid": 463681149624673,
+									"behaviorType": "PlayerMovements"
+								},
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 924710641871112,
+									"parameters": {
+										"variable": "IsDemon"
+									}
+								},
+								{
+									"id": "key-is-down",
+									"objectClass": "Keyboard",
+									"sid": 769740482467021,
+									"parameters": {
+										"key": 16
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-acceleration",
+									"objectClass": "Player",
+									"sid": 784830824586766,
+									"behaviorType": "PlayerMovements",
+									"parameters": {
+										"acceleration": "1000"
+									}
+								},
+								{
+									"id": "set-max-speed",
+									"objectClass": "Player",
+									"sid": 835530069353224,
+									"behaviorType": "PlayerMovements",
+									"parameters": {
+										"max-speed": "550"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Player",
+									"sid": 247724944335745,
+									"parameters": {
+										"animation": "\"demon_run\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "stop",
+									"objectClass": "playerAudio",
+									"sid": 738317449760640,
+									"parameters": {
+										"tag": "\"\""
+									}
+								},
+								{
+									"id": "play",
+									"objectClass": "playerAudio",
+									"sid": 105140814224526,
+									"parameters": {
+										"audio-file": {
+											"path": "player_running"
+										},
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								}
+							],
+							"sid": 263990218220287
+						}
+					],
+					"sid": 678681556160077
+				}
+			],
+			"sid": 458733512058852
+		},
+		{
+			"functionName": "CheckMob",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [],
+			"sid": 401494077020189,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Player",
+							"sid": 737545554570240,
+							"parameters": {
+								"object": "Enemy"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "subtract-from-instvar",
+							"objectClass": "Enemy",
+							"sid": 686495890327604,
+							"parameters": {
+								"instance-variable": "Life",
+								"value": "20"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Enemy",
+							"sid": 313790458314065,
+							"parameters": {
+								"animation": "\"hurt\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-speed",
+							"objectClass": "Enemy",
+							"sid": 970514355681474,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"speed": "0"
+							}
+						}
+					],
+					"sid": 342968026150042
+				}
+			]
 		}
 	],
 	"sid": 711005575548260

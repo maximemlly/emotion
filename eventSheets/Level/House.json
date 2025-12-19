@@ -13,7 +13,7 @@
 		},
 		{
 			"eventType": "include",
-			"includeSheet": "PlayerMovements"
+			"includeSheet": "PlayerBehavior"
 		},
 		{
 			"eventType": "block",
@@ -116,15 +116,6 @@
 					"sid": 504742031008117,
 					"parameters": {
 						"layout": "Village"
-					}
-				},
-				{
-					"id": "set-group-active",
-					"objectClass": "System",
-					"sid": 589622250629757,
-					"parameters": {
-						"group-name": "\"Attack\"",
-						"state": "activated"
 					}
 				},
 				{

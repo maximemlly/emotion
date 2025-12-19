@@ -12,12 +12,47 @@
 			"sid": 200982192371913
 		},
 		{
-			"eventType": "include",
-			"includeSheet": "PlayerMovements"
+			"eventType": "variable",
+			"name": "IsTearVisible",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 867559296492750
 		},
 		{
 			"eventType": "include",
-			"includeSheet": "PlayerCamera"
+			"includeSheet": "PlayerBehavior"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 527085288957487
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "InteractButton",
+					"sid": 227609466039932,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "tear",
+					"sid": 543804922434773,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 670840870600749
 		},
 		{
 			"eventType": "block",
@@ -40,9 +75,118 @@
 						"variable": "IsAtFountain",
 						"value": "true"
 					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "InteractButton",
+					"sid": 671214623572545,
+					"parameters": {
+						"visibility": "visible"
+					}
 				}
 			],
 			"sid": 547009383901523
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 704400575081449,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "InteractButton"
+					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 633615108939438,
+					"parameters": {
+						"variable": "IsAtFountain"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "tear",
+					"sid": 975296114973399,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "InteractButton",
+					"sid": 832022151626873,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 457683770401672,
+					"parameters": {
+						"variable": "IsTearVisible",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 577523011832446
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Player",
+					"sid": 492733564970898,
+					"parameters": {
+						"object": "tear"
+					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 118972721254134,
+					"parameters": {
+						"variable": "IsTearVisible"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 689337791677542,
+					"parameters": {
+						"variable": "IsDemon",
+						"value": "true"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 266702993209087,
+					"parameters": {
+						"seconds": "2",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 810089264564808,
+					"parameters": {
+						"layout": "BossFight"
+					}
+				}
+			],
+			"sid": 161409437598247
 		}
 	],
 	"sid": 822086489266746

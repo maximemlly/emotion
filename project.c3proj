@@ -50,6 +50,13 @@
 		},
 		{
 			"type": "behavior",
+			"id": "Bullet",
+			"name": "Bullet",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "Platform",
 			"name": "Platform",
 			"author": "Scirra",
@@ -72,7 +79,9 @@
 	],
 	"uniqueId": "auc5ylrf608",
 	"objectTypes": {
-		"items": [],
+		"items": [
+			"BossFlatform"
+		],
 		"subfolders": [
 			{
 				"items": [],
@@ -82,7 +91,9 @@
 							"Wall",
 							"Wall2",
 							"VillageFloor",
-							"AnimatedFountain"
+							"AnimatedFountain",
+							"InteractButton",
+							"tear"
 						],
 						"subfolders": [
 							{
@@ -160,8 +171,9 @@
 					},
 					{
 						"items": [
-							"BossBackground",
-							"BossPlatform"
+							"Platfrom",
+							"EnemyDirectionBox",
+							"BossFight"
 						],
 						"subfolders": [],
 						"name": "BossFight"
@@ -209,6 +221,14 @@
 				],
 				"subfolders": [],
 				"name": "Enemy"
+			},
+			{
+				"items": [
+					"DeathBackground",
+					"RespawnButton"
+				],
+				"subfolders": [],
+				"name": "DeathScreen"
 			}
 		]
 	},
@@ -225,20 +245,24 @@
 			"BossFight",
 			"MainMenu",
 			"House",
-			"Introduction"
+			"Introduction",
+			"DeathScreen"
 		],
 		"subfolders": []
 	},
 	"eventSheets": {
 		"items": [
 			"Introduction",
-			"EnemyBehavior"
+			"EnemyBehavior",
+			"DeathScreen"
 		],
 		"subfolders": [
 			{
 				"items": [
 					"PlayerMovements",
-					"PlayerCamera"
+					"PlayerCamera",
+					"PlayerBehavior",
+					"PlayerLife"
 				],
 				"subfolders": [],
 				"name": "Player"

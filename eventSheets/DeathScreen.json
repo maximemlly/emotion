@@ -1,0 +1,32 @@
+{
+	"name": "DeathScreen",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 198577220345179,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "RespawnButton"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 857413309391455,
+					"parameters": {
+						"layout": "MainMenu"
+					}
+				}
+			],
+			"sid": 652399803769501
+		}
+	],
+	"sid": 785883401327307
+}

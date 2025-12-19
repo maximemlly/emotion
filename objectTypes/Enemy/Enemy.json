@@ -4,8 +4,29 @@
 	"sid": 292633312711575,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
-	"instanceVariables": [],
-	"behaviorTypes": [],
+	"instanceVariables": [
+		{
+			"name": "Life",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 979445008751718
+		},
+		{
+			"name": "Damage",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 571898330387840
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Bullet",
+			"name": "Bullet",
+			"sid": 525278453718734
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [

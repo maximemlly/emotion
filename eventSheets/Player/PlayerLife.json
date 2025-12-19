@@ -1,0 +1,208 @@
+{
+	"name": "PlayerLife",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "PlayerLife",
+			"type": "number",
+			"initialValue": "100",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 845216628703260
+		},
+		{
+			"eventType": "variable",
+			"name": "HasTakenDamage",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 174134212045418
+		},
+		{
+			"eventType": "variable",
+			"name": "DamagesTaken",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 264015467445948
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 166179950722850,
+					"parameters": {
+						"variable": "PlayerLife",
+						"comparison": 3,
+						"value": "0"
+					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 146002029681703,
+					"parameters": {
+						"variable": "IsDemon"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Player",
+					"sid": 975654618620681,
+					"parameters": {
+						"animation": "\"death\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 928376771116104,
+					"parameters": {
+						"layout": "DeathScreen"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 964098574604387,
+					"parameters": {
+						"variable": "PlayerLife",
+						"value": "100"
+					}
+				}
+			],
+			"sid": 396262707726386,
+			"disabled": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 272968447577668,
+					"parameters": {
+						"variable": "PlayerLife",
+						"comparison": 3,
+						"value": "0"
+					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 161316515760487,
+					"disabled": true,
+					"parameters": {
+						"variable": "IsDemon"
+					}
+				},
+				{
+					"id": "is-animation-playing",
+					"objectClass": "Player",
+					"sid": 985690608896026,
+					"parameters": {
+						"animation": "\"demon_death\""
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Player",
+					"sid": 112437797931639,
+					"parameters": {
+						"animation": "\"demon_death\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 804404171314432
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-animation-finished",
+					"objectClass": "Player",
+					"sid": 686910127654534,
+					"parameters": {
+						"animation": "\"demon_death\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 365608332221863,
+					"parameters": {
+						"layout": "DeathScreen"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 283021313244551,
+					"parameters": {
+						"variable": "PlayerLife",
+						"value": "100"
+					}
+				}
+			],
+			"sid": 515091963466115
+		},
+		{
+			"functionName": "DamageTakenFunction",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [],
+			"sid": 124759794015111,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 447292654092742,
+							"parameters": {
+								"variable": "PlayerLife",
+								"value": "DamagesTaken"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Player",
+							"sid": 703007561159437,
+							"parameters": {
+								"animation": "\"demon_hurt\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 359746208990568
+				}
+			]
+		}
+	],
+	"sid": 187182463128118
+}

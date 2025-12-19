@@ -1,38 +1,32 @@
 {
-	"name": "BossPlatform",
+	"name": "BossFight",
 	"plugin-id": "Sprite",
-	"sid": 193591220918229,
+	"sid": 289989661484897,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
-	"behaviorTypes": [
-		{
-			"behaviorId": "solid",
-			"name": "Solid",
-			"sid": 219753862732395
-		}
-	],
+	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
 		"items": [
 			{
 				"frames": [
 					{
-						"width": 250,
-						"height": 250,
+						"width": 1024,
+						"height": 256,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 3738178,
+						"imageSpriteId": 8874197,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 198523549898196,
+				"sid": 892205874798373,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

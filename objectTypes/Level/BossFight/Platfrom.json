@@ -1,11 +1,17 @@
 {
-	"name": "BossBackground",
+	"name": "Platfrom",
 	"plugin-id": "Sprite",
-	"sid": 528878355486372,
+	"sid": 792922851297151,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 389518142398660
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [
@@ -20,13 +26,13 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 3519532,
+						"imageSpriteId": 5377169,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 925122177083321,
+				"sid": 508735504689771,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

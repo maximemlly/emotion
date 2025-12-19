@@ -1,5 +1,301 @@
 {
 	"name": "EnemyBehavior",
-	"events": [],
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Enemy",
+					"sid": 467007334302202,
+					"parameters": {
+						"instance-variable": "Life",
+						"comparison": 3,
+						"value": "0"
+					}
+				},
+				{
+					"id": "is-animation-playing",
+					"objectClass": "Enemy",
+					"sid": 143778329846825,
+					"parameters": {
+						"animation": "\"death\""
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Enemy",
+					"sid": 906310900888993,
+					"parameters": {
+						"animation": "\"death\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 357277898365738
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-animation-finished",
+					"objectClass": "Enemy",
+					"sid": 647897096011353,
+					"parameters": {
+						"animation": "\"death\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Enemy",
+					"sid": 101405020091202
+				}
+			],
+			"sid": 212151006148615
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-speed",
+					"objectClass": "Enemy",
+					"sid": 737817294298012,
+					"behaviorType": "Bullet",
+					"parameters": {
+						"comparison": 4,
+						"speed": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Enemy",
+					"sid": 792533726463790,
+					"parameters": {
+						"animation": "\"run\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 615899479364938
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-animation-finished",
+					"objectClass": "Enemy",
+					"sid": 993790543529089,
+					"parameters": {
+						"animation": "\"hurt\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-speed",
+					"objectClass": "Enemy",
+					"sid": 849512669661603,
+					"behaviorType": "Bullet",
+					"parameters": {
+						"speed": "150"
+					}
+				}
+			],
+			"sid": 261229138048942
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Enemy",
+					"sid": 750665247075812,
+					"parameters": {
+						"object": "EnemyDirectionBox"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 866913194868850,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "EnemyDirectionBox",
+							"sid": 564421939241317,
+							"parameters": {
+								"instance-variable": "Direction",
+								"comparison": 0,
+								"value": "\"Left\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-angle-of-motion",
+							"objectClass": "Enemy",
+							"sid": 854624050951632,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"angle": "180"
+							}
+						},
+						{
+							"id": "set-mirrored",
+							"objectClass": "Enemy",
+							"sid": 665600403038213,
+							"parameters": {
+								"state": "mirrored"
+							}
+						}
+					],
+					"sid": 738342960698493
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "EnemyDirectionBox",
+							"sid": 625981223619103,
+							"parameters": {
+								"instance-variable": "Direction",
+								"comparison": 0,
+								"value": "\"Right\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-angle-of-motion",
+							"objectClass": "Enemy",
+							"sid": 916360501543982,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"angle": "0"
+							}
+						},
+						{
+							"id": "set-mirrored",
+							"objectClass": "Enemy",
+							"sid": 891781192357627,
+							"parameters": {
+								"state": "not-mirrored"
+							}
+						}
+					],
+					"sid": 801128764339759
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Enemy",
+					"sid": 431216284462361,
+					"parameters": {
+						"object": "Player"
+					}
+				},
+				{
+					"id": "is-animation-playing",
+					"objectClass": "Enemy",
+					"sid": 954891677861389,
+					"parameters": {
+						"animation": "\"attack\""
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-speed",
+					"objectClass": "Enemy",
+					"sid": 523208715761814,
+					"behaviorType": "Bullet",
+					"parameters": {
+						"speed": "0"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Enemy",
+					"sid": 690646765536270,
+					"parameters": {
+						"animation": "\"attack\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 897856450204734
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-animation-finished",
+					"objectClass": "Enemy",
+					"sid": 172009245028297,
+					"parameters": {
+						"animation": "\"attack\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-speed",
+					"objectClass": "Enemy",
+					"sid": 728996836966185,
+					"behaviorType": "Bullet",
+					"parameters": {
+						"speed": "150"
+					}
+				}
+			],
+			"sid": 465793273784486,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Enemy",
+							"sid": 259053102303401,
+							"parameters": {
+								"object": "Player"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 873644339669964,
+							"parameters": {
+								"variable": "DamagesTaken",
+								"value": "Enemy.Damage"
+							}
+						},
+						{
+							"callFunction": "DamageTakenFunction",
+							"sid": 137664299253206
+						}
+					],
+					"sid": 967935462686464
+				}
+			]
+		}
+	],
 	"sid": 692556016187814
 }
