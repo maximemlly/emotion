@@ -1,0 +1,49 @@
+{
+	"name": "Village",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "IsAtFountain",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 200982192371913
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "PlayerMovements"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "PlayerCamera"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Player",
+					"sid": 830848529383275,
+					"parameters": {
+						"object": "AnimatedFountain"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 348377200762295,
+					"parameters": {
+						"variable": "IsAtFountain",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 547009383901523
+		}
+	],
+	"sid": 822086489266746
+}

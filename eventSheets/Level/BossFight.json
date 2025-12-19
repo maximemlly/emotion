@@ -1,0 +1,18 @@
+{
+	"name": "BossFight",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "PlayerMovements"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "PlayerCamera"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "EnemyBehavior"
+		}
+	],
+	"sid": 702194940974485
+}

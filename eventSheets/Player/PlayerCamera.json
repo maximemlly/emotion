@@ -1,0 +1,68 @@
+{
+	"name": "PlayerCamera",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 180419252097375
+				},
+				{
+					"id": "compare-x",
+					"objectClass": "PlayerCamera",
+					"sid": 908456998476372,
+					"parameters": {
+						"comparison": 2,
+						"x-co-ordinate": "950"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "PlayerCamera",
+					"sid": 808196146622359,
+					"parameters": {
+						"x": "950",
+						"y": "PlayerCamera.Y"
+					}
+				}
+			],
+			"sid": 160936744800397
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 357649546575961
+				},
+				{
+					"id": "compare-x",
+					"objectClass": "PlayerCamera",
+					"sid": 866665673682877,
+					"parameters": {
+						"comparison": 4,
+						"x-co-ordinate": "8200"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "PlayerCamera",
+					"sid": 786456664887205,
+					"parameters": {
+						"x": "8200",
+						"y": "PlayerCamera.Y"
+					}
+				}
+			],
+			"sid": 425092528754689
+		}
+	],
+	"sid": 284728518158369
+}

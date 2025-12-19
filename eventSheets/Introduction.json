@@ -1,0 +1,183 @@
+{
+	"name": "Introduction",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "IntroStep",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 444665910797389
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 440631268907408
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "introText2",
+					"sid": 385454800242011,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "introText3",
+					"sid": 387021290350656,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "introText4",
+					"sid": 203438512522285,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 796703835213740
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-click",
+					"objectClass": "Mouse",
+					"sid": 969432510614653,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 782000468847103,
+					"parameters": {
+						"variable": "IntroStep",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 772630210688950
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 422670464432104,
+					"parameters": {
+						"variable": "IntroStep",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "introText2",
+					"sid": 383683681015471,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 281558467049986
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 567481159082420,
+					"parameters": {
+						"variable": "IntroStep",
+						"comparison": 0,
+						"value": "2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "introText3",
+					"sid": 330917328273696,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 525024716401198
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 559193501861672,
+					"parameters": {
+						"variable": "IntroStep",
+						"comparison": 0,
+						"value": "3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "introText4",
+					"sid": 982081775132716,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 183973721602365
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 712234433141705,
+					"parameters": {
+						"variable": "IntroStep",
+						"comparison": 0,
+						"value": "4"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 235526164208972,
+					"parameters": {
+						"layout": "House"
+					}
+				}
+			],
+			"sid": 554945655989748
+		}
+	],
+	"sid": 379918249395281
+}

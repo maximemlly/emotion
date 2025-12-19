@@ -1,0 +1,64 @@
+{
+	"name": "Clouds",
+	"plugin-id": "Sprite",
+	"sid": 916111950586704,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 2048,
+						"height": 256,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 4803835,
+						"collisionPoly": {
+							"points": [
+								0.6611328125,
+								0.08203125,
+								0.97314453125,
+								0.140625,
+								0.98828125,
+								0.25,
+								0.966796875,
+								0.77734375,
+								0.86328125,
+								0.77734375,
+								0.31494140625,
+								0.75390625,
+								0.00830078125,
+								0.3359375,
+								0.0166015625,
+								0.26953125,
+								0.0546875,
+								0.16796875,
+								0.28515625,
+								0.0859375
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 598575400498353,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -36,6 +36,13 @@
 		},
 		{
 			"type": "plugin",
+			"id": "Text",
+			"name": "Text",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "gamepad",
 			"name": "Gamepad",
 			"author": "Scirra",
@@ -68,13 +75,98 @@
 		"items": [],
 		"subfolders": [
 			{
-				"items": [
-					"Wall",
-					"Platform",
-					"Sky",
-					"Mount"
+				"items": [],
+				"subfolders": [
+					{
+						"items": [
+							"Wall",
+							"Wall2",
+							"VillageFloor",
+							"AnimatedFountain"
+						],
+						"subfolders": [
+							{
+								"items": [
+									"Clouds",
+									"Sky",
+									"Skyline",
+									"Skyline2"
+								],
+								"subfolders": [],
+								"name": "Sky"
+							},
+							{
+								"items": [
+									"Others",
+									"Mount"
+								],
+								"subfolders": [
+									{
+										"items": [
+											"House1",
+											"House2",
+											"House3",
+											"House4",
+											"House5",
+											"House6",
+											"House7"
+										],
+										"subfolders": [],
+										"name": "Houses"
+									},
+									{
+										"items": [
+											"Trees1",
+											"Trees2",
+											"Trees3",
+											"Trees4"
+										],
+										"subfolders": [],
+										"name": "Trees"
+									},
+									{
+										"items": [
+											"Grass",
+											"Grass2"
+										],
+										"subfolders": [],
+										"name": "Grass"
+									},
+									{
+										"items": [
+											"MainPath",
+											"Path1",
+											"Path2"
+										],
+										"subfolders": [],
+										"name": "Path"
+									}
+								],
+								"name": "Buildings"
+							}
+						],
+						"name": "Village"
+					},
+					{
+						"items": [
+							"HouseBackground",
+							"HouseFloor",
+							"HouseWall1",
+							"HouseWall2",
+							"LeaveButton"
+						],
+						"subfolders": [],
+						"name": "House"
+					},
+					{
+						"items": [
+							"BossBackground",
+							"BossPlatform"
+						],
+						"subfolders": [],
+						"name": "BossFight"
+					}
 				],
-				"subfolders": [],
 				"name": "Level"
 			},
 			{
@@ -88,6 +180,35 @@
 				],
 				"subfolders": [],
 				"name": "Player"
+			},
+			{
+				"items": [
+					"Background",
+					"Title",
+					"StartButtron",
+					"QuitButton"
+				],
+				"subfolders": [],
+				"name": "MainMenu"
+			},
+			{
+				"items": [
+					"IntroBG",
+					"introText1",
+					"introText2",
+					"introText3",
+					"introText4",
+					"introText5"
+				],
+				"subfolders": [],
+				"name": "Introduction"
+			},
+			{
+				"items": [
+					"Enemy"
+				],
+				"subfolders": [],
+				"name": "Enemy"
 			}
 		]
 	},
@@ -100,21 +221,37 @@
 	},
 	"layouts": {
 		"items": [
-			"Start",
-			"End"
+			"Village",
+			"BossFight",
+			"MainMenu",
+			"House",
+			"Introduction"
 		],
 		"subfolders": []
 	},
 	"eventSheets": {
-		"items": [],
+		"items": [
+			"Introduction",
+			"EnemyBehavior"
+		],
 		"subfolders": [
 			{
 				"items": [
 					"PlayerMovements",
-					"StartLevel"
+					"PlayerCamera"
 				],
 				"subfolders": [],
 				"name": "Player"
+			},
+			{
+				"items": [
+					"House",
+					"MainMenu",
+					"Village",
+					"BossFight"
+				],
+				"subfolders": [],
+				"name": "Level"
 			}
 		]
 	},

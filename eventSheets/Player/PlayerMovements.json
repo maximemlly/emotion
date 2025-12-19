@@ -5,57 +5,6 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-click",
-					"objectClass": "Mouse",
-					"sid": 857451391801547,
-					"parameters": {
-						"mouse-button": "left",
-						"click-type": "clicked"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-animation",
-					"objectClass": "Player",
-					"sid": 653237784537259,
-					"parameters": {
-						"animation": "\"playerAttack\"",
-						"from": "beginning"
-					}
-				},
-				{
-					"id": "shake",
-					"objectClass": "PlayerCamera",
-					"sid": 739397487467986,
-					"behaviorType": "ScrollTo",
-					"parameters": {
-						"magnitude": "5",
-						"duration": "0.2",
-						"mode": "reducing-magnitude"
-					}
-				},
-				{
-					"id": "play",
-					"objectClass": "playerAudio",
-					"sid": 509181916295007,
-					"parameters": {
-						"audio-file": {
-							"path": "sword_hit"
-						},
-						"loop": "not-looping",
-						"volume": "0",
-						"stereo-pan": "0",
-						"tag-optional": "\"\""
-					}
-				}
-			],
-			"sid": 166154276868924
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
 					"id": "on-moved",
 					"objectClass": "Player",
 					"sid": 926269057407761,
@@ -230,77 +179,6 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-moved",
-					"objectClass": "Player",
-					"sid": 576965326342517,
-					"behaviorType": "PlayerMovements"
-				},
-				{
-					"id": "key-is-down",
-					"objectClass": "Keyboard",
-					"sid": 308340888727149,
-					"parameters": {
-						"key": 16
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-acceleration",
-					"objectClass": "Player",
-					"sid": 979983232612213,
-					"behaviorType": "PlayerMovements",
-					"parameters": {
-						"acceleration": "1000"
-					}
-				},
-				{
-					"id": "set-max-speed",
-					"objectClass": "Player",
-					"sid": 696835962024846,
-					"behaviorType": "PlayerMovements",
-					"parameters": {
-						"max-speed": "550"
-					}
-				},
-				{
-					"id": "set-animation",
-					"objectClass": "Player",
-					"sid": 705673579570888,
-					"parameters": {
-						"animation": "\"playerRun\"",
-						"from": "beginning"
-					}
-				},
-				{
-					"id": "stop",
-					"objectClass": "playerAudio",
-					"sid": 838784566949255,
-					"parameters": {
-						"tag": "\"\""
-					}
-				},
-				{
-					"id": "play",
-					"objectClass": "playerAudio",
-					"sid": 812935012774006,
-					"parameters": {
-						"audio-file": {
-							"path": "player_running"
-						},
-						"loop": "not-looping",
-						"volume": "0",
-						"stereo-pan": "0",
-						"tag-optional": "\"\""
-					}
-				}
-			],
-			"sid": 927910334040187
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
 					"id": "every-tick",
 					"objectClass": "System",
 					"sid": 151033513980932
@@ -320,35 +198,146 @@
 			"sid": 213620634144855
 		},
 		{
-			"eventType": "block",
-			"conditions": [
+			"eventType": "group",
+			"disabled": false,
+			"title": "Attack",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
 				{
-					"id": "every-tick",
-					"objectClass": "System",
-					"sid": 180419252097375
-				},
-				{
-					"id": "compare-x",
-					"objectClass": "PlayerCamera",
-					"sid": 908456998476372,
-					"parameters": {
-						"comparison": 2,
-						"x-co-ordinate": "950"
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-click",
+							"objectClass": "Mouse",
+							"sid": 515440861261571,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Player",
+							"sid": 802319786489567,
+							"parameters": {
+								"animation": "\"playerAttack\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "shake",
+							"objectClass": "PlayerCamera",
+							"sid": 276151006612886,
+							"behaviorType": "ScrollTo",
+							"parameters": {
+								"magnitude": "5",
+								"duration": "0.2",
+								"mode": "reducing-magnitude"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "playerAudio",
+							"sid": 591313760248644,
+							"parameters": {
+								"audio-file": {
+									"path": "sword_hit"
+								},
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 447763826887260
 				}
 			],
-			"actions": [
+			"sid": 907848462815456
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Run",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
 				{
-					"id": "set-position",
-					"objectClass": "PlayerCamera",
-					"sid": 808196146622359,
-					"parameters": {
-						"x": "950",
-						"y": "PlayerCamera.Y"
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-moved",
+							"objectClass": "Player",
+							"sid": 724401123376857,
+							"behaviorType": "PlayerMovements"
+						},
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 340083335741923,
+							"parameters": {
+								"key": 16
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-acceleration",
+							"objectClass": "Player",
+							"sid": 601705336874677,
+							"behaviorType": "PlayerMovements",
+							"parameters": {
+								"acceleration": "1000"
+							}
+						},
+						{
+							"id": "set-max-speed",
+							"objectClass": "Player",
+							"sid": 530701552882553,
+							"behaviorType": "PlayerMovements",
+							"parameters": {
+								"max-speed": "550"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Player",
+							"sid": 984865680797859,
+							"parameters": {
+								"animation": "\"playerRun\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "stop",
+							"objectClass": "playerAudio",
+							"sid": 306029405182459,
+							"parameters": {
+								"tag": "\"\""
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "playerAudio",
+							"sid": 141738272225925,
+							"parameters": {
+								"audio-file": {
+									"path": "player_running"
+								},
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 880175047243194
 				}
 			],
-			"sid": 160936744800397
+			"sid": 223544063109321
 		}
 	],
 	"sid": 711005575548260

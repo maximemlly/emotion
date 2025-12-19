@@ -1,0 +1,10 @@
+{
+	"name": "introText2",
+	"plugin-id": "Text",
+	"sid": 658748818067629,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": []
+}

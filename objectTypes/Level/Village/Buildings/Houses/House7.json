@@ -1,0 +1,64 @@
+{
+	"name": "House7",
+	"plugin-id": "Sprite",
+	"sid": 566138396107941,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 2048,
+						"height": 256,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 5006104,
+						"collisionPoly": {
+							"points": [
+								0.50537109375,
+								0.578125,
+								0.54736328125,
+								0.578125,
+								0.666015625,
+								0.67578125,
+								0.67138671875,
+								0.72265625,
+								0.6689453125,
+								0.84375,
+								0.65966796875,
+								0.90234375,
+								0.173828125,
+								0.91796875,
+								0.134765625,
+								0.8984375,
+								0.13525390625,
+								0.62890625,
+								0.17822265625,
+								0.59375
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 389660212148270,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -1,0 +1,54 @@
+{
+	"name": "Skyline2",
+	"plugin-id": "Sprite",
+	"sid": 123624569249142,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 2048,
+						"height": 256,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 1313245,
+						"collisionPoly": {
+							"points": [
+								0.6943359375,
+								0.5625,
+								0.7666015625,
+								0.65625,
+								0.765625,
+								0.94140625,
+								0.59423828125,
+								0.94140625,
+								0.59423828125,
+								0.65625
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 900710617766310,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

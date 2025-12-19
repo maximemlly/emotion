@@ -1,0 +1,38 @@
+{
+	"name": "MainMenu",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 867429533210289,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "StartButtron"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 427198895006752,
+					"parameters": {
+						"layout": "Introduction"
+					}
+				}
+			],
+			"sid": 611575350324067
+		},
+		{
+			"eventType": "block",
+			"conditions": [],
+			"actions": [],
+			"sid": 373175000402400
+		}
+	],
+	"sid": 544884406529606
+}
